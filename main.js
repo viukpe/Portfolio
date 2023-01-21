@@ -15,8 +15,6 @@ $(window).scroll(function(){
 });
 
 
-
-
 // Toggle between DAy and Night Mode
 $('#switch1').on('click', function(){
   $('body').toggleClass('night')
