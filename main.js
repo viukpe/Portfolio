@@ -1,11 +1,11 @@
 
-// On Click hand emoji will take you to the top of the page
+// Click hand emoji should take you to the top of the page
 document.getElementById('top-button').addEventListener('click',function(){
     window.scrollTo(0,0);
 });
 
 $(window).scroll(function(){
-  var threshold = 208; // number of pixels before bottom of page that you want to start fading
+  var threshold = 208; // number of pixels before bottom of page for fading
   var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
   if( op <= 13 ){
     $("#top-button").show();
@@ -15,13 +15,13 @@ $(window).scroll(function(){
 });
 
 
-// Toggle between DAy and Night Mode
+// Toggle between Day and Night Mode
 $('#switch1').on('click', function(){
   $('body').toggleClass('night')
 })
 
 
-// If user visit after 7 pm in night the body will change the style to night class
+// If user visit after 7 pm in night,the body will change the style to night class
 $(document).ready(function(){
   var date = new Date();
   var current_time = date.getHours();
