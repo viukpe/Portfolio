@@ -31,7 +31,9 @@ $(document).ready(function(){
   else
     // Else use ‘day’ theme
     document.body.className = "";
+  document.body.className = "night";
 });
+
 
 $(window).load(function() {
       $("#top-button").hide();
